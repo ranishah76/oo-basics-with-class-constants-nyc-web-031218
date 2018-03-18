@@ -4,8 +4,11 @@ class Book
 
   GENRES = []
 
-  def initialize(title, genre)
+  def initialize(title)
     @title = title
+  end
+
+  def genre=(genre)
     @genre = genre
     GENRES << genre
   end
